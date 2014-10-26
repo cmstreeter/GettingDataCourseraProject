@@ -5,7 +5,7 @@ This repository contains the following files:
 
 1. README.md - This file describing repository contents.
 2. run_analysis.R - R script to download and manipulate data from the UCI Machine Learning Repository Hunan Activity Recognition Using Smartphones (HARUS) project. See detailed description below.
-3. codebook.txt - A description of the variables contained in the "Mean_HARUS_data_by_subject_and_activity.txt" file produced by running "run_analysis.R".
+3. codebook.md - A description of the variables contained in the "Mean_HARUS_data_by_subject_and_activity.txt" file produced by running "run_analysis.R".
 
 
 Overview - run_analysis.R
