@@ -11,7 +11,7 @@ Each record is identified by the following variables:
 
 The remainder of the features are means of corresponding features extracted from the HARUS data set, summarized for each Subject_id / Activity_id pair. The features are named as follows:
 
-Mean_of_[MEASUREMENT_NAME]_[MEASUREMENT_TYPE]_[OPTIONAL AXIS VALUE]
+Mean\_of\_[MEASUREMENT\_NAME]\_[MEASUREMENT\_TYPE]\_[OPTIONAL AXIS VALUE]
 
 For example, the feature "Mean_of_tBodyAcc_mean_Z" can be interpreted as follows:
 
