@@ -1,4 +1,4 @@
-codebook.txt
+codebook.md
 =================
 *NOTE: Feature names have been kept consistent with the original HARUS data set to allow for quick cross referencing.  Details are provided below on how to interpret the feature names.* 
 
