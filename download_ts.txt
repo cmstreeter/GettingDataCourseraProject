@@ -1,0 +1,1 @@
+UCI Machine Learning Repository Human Activity Recognition Using Smartphones (HARUS) Data Set downloaded: Sun Oct 26 16:51:13 2014

@@ -75,14 +75,15 @@ rownames(merged_data) <- NULL
 mean_data <- aggregate(. ~ Subject_id + Activity_id + Activity_name, merged_data, FUN = mean)
 mean_data <- mean_data[order(mean_data$Subject_id, mean_data$Activity_id), ]
 
-# Prepend "Mean of " to column headings for clarity
-colnames(mean_data)[4:ncol(mean_data)] <- paste("Mean of", colnames(mean_data[4:ncol(mean_data)]))
+# Prepend "Mean of " to column headings for clarity and clean up spaces
+colnames(mean_data)[4:ncol(mean_data)] <- paste("Mean_of", colnames(mean_data[4:ncol(mean_data)]), sep="_")
+colnames(mean_data) <- gsub("\\.+", "_", colnames(mean_data))
+colnames(mean_data) <- gsub("_$", "", colnames(mean_data))
 
 # Reset row.names to avoid confusion
 rownames(mean_data) <- NULL
 
 # Write merged_data and mean_data out to txt file
-write.table(merged_data, "../Merged_HARUS_data.txt", row.names=F)
 write.table(mean_data, "../Mean_HARUS_data_by_subject_and_activity.txt", row.names=F)
 
 # Return to initial working directory

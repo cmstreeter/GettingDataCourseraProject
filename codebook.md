@@ -1,19 +1,23 @@
 codebook.md
 =================
-*NOTE: Feature names have been kept consistent with the original HARUS data set to allow for quick cross referencing.  Details are provided below on how to interpret the feature names.* 
+*NOTE: Feature names have been kept consistent with the original HARUS data set to allow for quick cross referencing.  While the HARUS naming convention might not seem extremely self-explanatory at first, it provides for a compact interpretation of rather complex measurements.  Names have been cleaned to use underscores as word separators.  Details are provided below on how to break apart and interpret the feature names.* 
 
-The features contained in the file "Mean_HARUS_data_by_subject_and_activity.txt" have been summarized from the features contained in the UCI Machine Learning Repository Hunan Activity Recognition Using Smartphones (HARUS) data set (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).  As such, much of the feature descriptions found here are summarized from the file "features_info.txt" contained within the HARUS data set.
+The features contained in the file "Mean_HARUS_data_by_subject_and_activity.txt" have been summarized from the features contained in the UCI Machine Learning Repository Hunan Activity Recognition Using Smartphones (HARUS) data set (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 
-Each feature in the "Mean_HARUS_data_by_subject_and_activity.txt" data set represents the mean value for a corresponding measurement in the HARUS data set, aggregated by each Subject_id / Activity_id pair.
+Each record is identified by the following variables:
+* Subject_id - ID number of given human subject
+* Activity_id - Activity number
+* Activity_name - Descriptive name of activity
 
-The features are named as follows:
-Mean.of.[MEASUREMENT_NAME].[MEASUREMENT_TYPE]..[.OPTIONAL AXIS VALUE]
+The remainder of the features are means of corresponding features extracted from the HARUS data set, summarized for each Subject_id / Activity_id pair. The features are named as follows:
 
-For example, the feature "Mean.of.tBodyAcc.mean...Z" can be interpreted as follows:
+Mean_of_[MEASUREMENT_NAME]_[MEASUREMENT_TYPE]_[OPTIONAL AXIS VALUE]
+
+For example, the feature "Mean_of_tBodyAcc_mean_Z" can be interpreted as follows:
 
 "Subject / activity mean of the tBodyAcc mean as recorded along the Z axis."
 
-As noted in the HARUS data set, the [MEASUREMENT_NAME] and [MEASUREMENT_TYPE] information is assigned as follows:
+Details of the definitions of the [MEASUREMENT_NAME] and [MEASUREMENT_TYPE] values as well as a description of how these data were obtained can be found in the "features_info.txt" file included in the HARUS data set and quoted here:
 
 "The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
