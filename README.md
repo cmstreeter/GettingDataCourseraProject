@@ -4,7 +4,7 @@ GettingDataCourseraProject
 This repository contains the following files:
 
 1. README.md - This file describing repository contents.
-2. run_analysis.R - R script to download and manipulate data from the UCI Machine Learning Repository Hunan Activity Recognition Using Smartphones project. See detailed description below.
+2. run_analysis.R - R script to download and manipulate data from the UCI Machine Learning Repository Hunan Activity Recognition Using Smartphones (HARUS) project. See detailed description below.
 3. codebook.txt - A description of the variables contained in the "Mean_HARUS_data_by_subject_and_activity.txt" file produced by running "run_analysis.R".
 
 
@@ -12,7 +12,7 @@ Overview - run_analysis.R
 -------------------------
 This script downloads data from the UCI Machine Learning Repository Hunan Activity Recognition Using Smartphones (HARUS) project (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and outputs the following:
 
-1. Mean_HARUS_data_by_subject_and_activity.txt - A tidy data (space-delimited) set containing the mean measurements for each subject / activity pair for each of the HARUS features representing a mean or standard deviation measurement.
+1. Mean_HARUS_data_by_subject_and_activity.txt - A tidy data set (space-delimited) containing the mean measurements for each subject / activity pair for each of the HARUS features representing a mean or standard deviation measurement.
 2. Merged_HARUS_data.txt - The merged data set (space-delimited) showing the non-aggregated, raw data used to calculate the data in Mean_HARUS_data_by_subject_and_activity.txt.
 3. download_ts.txt - A text file recording the date and time of data download.
 
